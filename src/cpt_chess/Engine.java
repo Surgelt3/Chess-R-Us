@@ -15,6 +15,7 @@ import java.util.logging.Logger;
 public class Engine 
 
 {
+    //vars
     static BufferedWriter b_w;
     static BufferedReader b_r;
     static ProcessBuilder builder;
@@ -29,6 +30,7 @@ public class Engine
      */
     public Engine()
     {
+          // create builder for for runnning process
          builder = new ProcessBuilder(location.getdir());
          builder.redirectErrorStream(true);
     }
@@ -41,6 +43,7 @@ public class Engine
     {
         try 
         {
+            // start the builder
             process = builder.start();
             
         } 
@@ -58,14 +61,18 @@ public class Engine
      */
     public void read () 
     {
+        //input stream reader
         BufferedReader stdInput = new BufferedReader(new 
         InputStreamReader(process.getInputStream()));
         
+        // Create a new thread
         new Thread ()
         {
             public void run ()
             {
                 try {
+                    
+                    //read input, if it is the bestmove set engine move to it
                     String line =  stdInput.readLine();
                  
                     while (line != null)
@@ -84,6 +91,7 @@ public class Engine
         }.start();
     }
     
+    //RETIRED
     /* Get bestmove from engine 
      * Pres: Engine is started and not stopped
      * Post: String of best move will be returned 
@@ -119,6 +127,7 @@ public class Engine
         process.destroyForcibly();
     }
     
+    //RETIRED
     /* Sent call to engine
      * Pre: Engine is running and not stopped
      * Post Command will be executed 
@@ -134,6 +143,7 @@ public class Engine
         }
     }
      
+     //RETIRED
      /* Change skill lvl of engine (0-20)
       * Pre: Engine is running and not stopped
       * Post: Skill level set to specified value
@@ -143,6 +153,7 @@ public class Engine
          executeCommand("setoption name Skill Level value " + skill_lvl);
      }
      
+     //RETIRED
      /* Determine the bestmove in a position given amount of time to calculate 
       * Pre: Engine is running and not stopped
       * Post: bestmove calculated 
@@ -171,6 +182,7 @@ public class Engine
         return line.split(" ")[1];
      }
     
+     //RETIRED
      /* @overload
       * depth instead of time
       */
