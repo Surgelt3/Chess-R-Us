@@ -1,7 +1,10 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+Names: Lucas T, Asa L, Chris N, Junhu W
+Course Code: ICS4U1-02
+Written on April 29
+Title: Chess r us
+Description: A multifaceted and multidimensional chess application designed to help beginner players expand their mental capacity in the area of chess and advanced players to refine their skills to the highest ability. It provides this service by allowing the player to play against the computer of their desired skill level. While giving them access to wide range education tools in the way of puzzles and lessons to learn more. It also offers the unique feature of being customizable in the way of different chess skins.     
+
  */
 package cpt_chess;
 
