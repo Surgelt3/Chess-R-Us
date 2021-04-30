@@ -1,3 +1,5 @@
+
+
 // package statement
 package cpt_chess;
 
@@ -142,7 +144,7 @@ public class test_chess
 		}
 		
 		
-		// get direction for for loop
+		// get direction for for loop, wether it's going up left, down right etc
 		int row, col;
 		
 		if(num1a < num2a){
@@ -159,7 +161,7 @@ public class test_chess
 		
 		
 		
-		//loop through move and check for colision 
+		//loop through move and check for colision using vairbles form above that determine path
 		int y = num1b + col;
 		
 		
@@ -259,7 +261,9 @@ public class test_chess
 		else {
 			return false;
 		}
+		// no capture as knight goes over peices
 	}
+
         
         /* pre: king command 
 	 * post: validity
@@ -353,6 +357,7 @@ public class test_chess
                
 	/* pre: n/a
 	 * post: prints board
+	 * not really used anymore as graphics does this
 	 */
 	public static void boardprint(int x1, int y1, String[][] board) {
 		// run through board with loop and print it 
@@ -376,10 +381,10 @@ public class test_chess
 		if(board[num1a][num1b].equalsIgnoreCase("q") | board[num1a][num1b].equalsIgnoreCase("Q")) {
 			int i;
 			
-			// determining if rook move
+			// determining if it's similar to rook move
 			if(num2a == num1a | num2b == num1b) {
 				
-				//see rook for more in-depth comenting
+				//see rook for more in-depth comenting, at is is the same code , only slightly ajusted
 				
 			    if (num1a == num2a && num1b == num2b)
 			        return false;
@@ -441,11 +446,11 @@ public class test_chess
 			    return true;
 			}
 			
-			// checking to see if it's the bishop 
+			// checking to see if it's the bishop move
 			else if (Math.abs(num1a - num2a) == Math.abs(num1b - num2b)) {
 				
 				
-				// see bishop for better comments
+				// see bishop for comments as it's the roughly the same code.
 				if(num1a == num2a || num1b == num2b){
 					
 					return false;
@@ -519,7 +524,7 @@ public class test_chess
          */
 	public static int pos_translate (String pos)
     {
-       
+       // simply takes a relgular chess move and makes it an arry corridiante
         switch (pos)
        {
            case "a":
@@ -554,6 +559,7 @@ public class test_chess
             String ypos_final = "";
             String xpos_final = String.valueOf(Math.abs(x_pos - 8));
             
+	    // same thing as above, just reverse
             switch (y_pos)
             {
                 case 0:
