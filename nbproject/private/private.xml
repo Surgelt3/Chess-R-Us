@@ -2,25 +2,6 @@
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
-        <group>
-            <file>file:/C:/Users/lucas/Documents/NetBeansProjects/CPT_Chess/src/cpt_chess/CPT_Chess.java</file>
-            <file>file:/C:/Users/lucas/Documents/NetBeansProjects/CPT_Chess/src/cpt_chess/puzzles.java</file>
-            <file>file:/C:/Users/lucas/Documents/NetBeansProjects/CPT_Chess/src/cpt_chess/Java_main_panel.java</file>
-            <file>file:/C:/Users/lucas/Documents/NetBeansProjects/CPT_Chess/src/cpt_chess/Chess_Puzzles_Panel.java</file>
-            <file>file:/C:/Users/lucas/Documents/NetBeansProjects/CPT_Chess/src/cpt_chess/experience.java</file>
-            <file>file:/C:/Users/lucas/Documents/NetBeansProjects/CPT_Chess/src/cpt_chess/Lessons_Menu.java</file>
-            <file>file:/C:/Users/lucas/Documents/NetBeansProjects/CPT_Chess/src/cpt_chess/Puzzle_End_Panel.java</file>
-            <file>file:/C:/Users/lucas/Documents/NetBeansProjects/CPT_Chess/src/cpt_chess/Puzzles_Main.java</file>
-            <file>file:/C:/Users/lucas/Documents/NetBeansProjects/CPT_Chess/src/cpt_chess/test_chess.java</file>
-            <file>file:/C:/Users/lucas/Documents/NetBeansProjects/CPT_Chess/src/cpt_chess/Main_Game.java</file>
-            <file>file:/C:/Users/lucas/Documents/NetBeansProjects/CPT_Chess/src/cpt_chess/Difficulty_Game_Prompt.java</file>
-            <file>file:/C:/Users/lucas/Documents/NetBeansProjects/CPT_Chess/src/cpt_chess/Game_Over_Panel.java</file>
-            <file>file:/C:/Users/lucas/Documents/NetBeansProjects/CPT_Chess/src/cpt_chess/Single_Multiplayer_Prompt.java</file>
-            <file>file:/C:/Users/lucas/Documents/NetBeansProjects/CPT_Chess/src/cpt_chess/Chess_Puzzles_Easy.java</file>
-            <file>file:/C:/Users/lucas/Documents/NetBeansProjects/CPT_Chess/src/cpt_chess/Chess_Board_Panel.java</file>
-            <file>file:/C:/Users/lucas/Documents/NetBeansProjects/CPT_Chess/src/cpt_chess/Main_Java_Frame.java</file>
-            <file>file:/C:/Users/lucas/Documents/NetBeansProjects/CPT_Chess/src/cpt_chess/Chess_Trainer_Menu.java</file>
-            <file>file:/C:/Users/lucas/Documents/NetBeansProjects/CPT_Chess/src/cpt_chess/Puzzle_Select_Difficulty_Panel.java</file>
-        </group>
+        <group/>
     </open-files>
 </project-private>

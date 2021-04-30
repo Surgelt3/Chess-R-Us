@@ -54,7 +54,7 @@ public class puzzles {
         static String [][] puzzle_3d = {{"E","E","k","n","r","E","E","E"},{"E","E","p","E","E","E","p","p"},{"p","E","E","E","b","p","E","E"},{"E","p","E","E","E","E","E","E"},{"E","E","E","E","E","E","E","E"},{"P","B","E","E","E","N","E","E"},{"E","P","P","E","E","P","P","P"},{"E","K","E","B","E","E","E","E"}};
 	static int [][] puzzle_3d_answer = {{pos_translate("d"),abs(6-8)},{pos_translate("g"),abs(3-8)}};
 	
-	static String [][] puzzle_1f = {{"E","E","E","E","B","E","E","E"},{"E","E","E","E","E","E","K","E"},{"E","E","E","E","E","E","E","E"},{"E","E","E","B","E","E","E","E"},{"p","r","E","E","E","E","E","E"},{"E","E","E","E","E","Q","P","P"},{"E","E","E","E","E","E","E","K"},{"E","E","E","E","E","E","E","E"}};
+	static String [][] puzzle_1f = {{"E","E","E","E","B","E","E","E"},{"E","E","E","E","E","E","k","E"},{"E","E","E","E","E","E","E","E"},{"E","E","E","B","E","E","E","E"},{"p","r","E","E","E","E","E","E"},{"E","E","E","E","E","Q","P","P"},{"E","E","E","E","E","E","E","K"},{"E","E","E","E","E","E","E","E"}};
 	static int [][] puzzle_1f_answer = {{pos_translate("f"),abs(3-8)},{pos_translate("c"),abs(3-8)}};
         
         static String [][] puzzle_2f = {{"r","E","b","E","k","E","n","r"},{"p","E","p","p","E","E","p","p"},{"E","E","p","E","q","E","E","E"},{"E","E","E","N","E","E","E","E"},{"E","E","N","E","P","E","E","E"},{"E","E","E","E","E","E","E","E"},{"P","P","P","P","E","P","P","P"},{"R","E","E","E","E","R","K","E"}};

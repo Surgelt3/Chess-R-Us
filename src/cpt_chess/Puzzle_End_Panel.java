@@ -57,7 +57,6 @@ public class Puzzle_End_Panel extends javax.swing.JPanel {
 
         Puzzle_Result = new javax.swing.JLabel();
         Select_New_Puzzle = new javax.swing.JButton();
-        Try_Again_Button = new javax.swing.JButton();
 
         setBackground(new java.awt.Color(59, 61, 62));
 
@@ -66,21 +65,12 @@ public class Puzzle_End_Panel extends javax.swing.JPanel {
         Puzzle_Result.setText(cpt_chess.Puzzles_Main.winner_loser_text);
 
         Select_New_Puzzle.setFont(new java.awt.Font("Dubai Medium", 0, 14)); // NOI18N
-        Select_New_Puzzle.setText("Select New Puzzle");
+        Select_New_Puzzle.setText("Return to Chess Puzzle Menu");
         Select_New_Puzzle.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 Select_New_PuzzleActionPerformed(evt);
             }
         });
-
-        Try_Again_Button.setFont(new java.awt.Font("Dubai Medium", 0, 14)); // NOI18N
-        Try_Again_Button.setText("Try Again");
-        Try_Again_Button.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                Try_Again_ButtonActionPerformed(evt);
-            }
-        });
-        Try_Again_Button.setVisible(false);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
@@ -93,21 +83,17 @@ public class Puzzle_End_Panel extends javax.swing.JPanel {
                         .addComponent(Puzzle_Result)
                         .addGap(182, 182, 182))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                            .addComponent(Select_New_Puzzle, javax.swing.GroupLayout.DEFAULT_SIZE, 161, Short.MAX_VALUE)
-                            .addComponent(Try_Again_Button, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                        .addGap(275, 275, 275))))
+                        .addComponent(Select_New_Puzzle, javax.swing.GroupLayout.PREFERRED_SIZE, 219, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(255, 255, 255))))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGap(50, 50, 50)
                 .addComponent(Puzzle_Result)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 234, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 233, Short.MAX_VALUE)
                 .addComponent(Select_New_Puzzle, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(Try_Again_Button, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(31, 31, 31))
+                .addGap(105, 105, 105))
         );
     }// </editor-fold>//GEN-END:initComponents
     
@@ -122,88 +108,9 @@ public class Puzzle_End_Panel extends javax.swing.JPanel {
         
     }//GEN-LAST:event_Select_New_PuzzleActionPerformed
 
-    /*
-    pre: java.awt.event.ActionEvent evt
-    post: removeAll from main_frame and run Puzzles_Main
-    */
-    private void Try_Again_ButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Try_Again_ButtonActionPerformed
-        // TODO add your handling code here:
-        
-        if(puzzle_selected.equals("1c")){
-            puzzle = puzzle_1c;
-            
-        }else if(puzzle_selected.equals("2c")){
-            puzzle = puzzle_2c;
-            
-        }else if(puzzle_selected.equals("3c")){
-            puzzle = puzzle_3c;
-            
-        }else if(puzzle_selected.equals("4c")){
-            puzzle = puzzle_4c;
-            
-        }else if(puzzle_selected.equals("5c")){
-            puzzle = puzzle_5c;
-            
-        }else if(puzzle_selected.equals("6c")){
-            puzzle = puzzle_6c;
-            
-        }else if(puzzle_selected.equals("7c")){
-            puzzle = puzzle_7c;
-            
-        }else if(puzzle_selected.equals("1d")){
-            puzzle = puzzle_1d;
-            
-        }else if(puzzle_selected.equals("2d")){
-            puzzle = puzzle_2d;
-            
-        }else if(puzzle_selected.equals("3d")){
-            puzzle = puzzle_3d;
-            
-        }else if(puzzle_selected.equals("1f")){
-            puzzle = puzzle_1f;
-            
-        }else if(puzzle_selected.equals("2f")){
-            puzzle = puzzle_2f;
-            
-        }else if(puzzle_selected.equals("3f")){
-            puzzle = puzzle_3f;
-            
-        }else if(puzzle_selected.equals("4f")){
-            puzzle = puzzle_4f;
-            
-        }else if(puzzle_selected.equals("5f")){
-            puzzle = puzzle_5f;
-            
-        }else if(puzzle_selected.equals("6f")){
-            puzzle = puzzle_6f;
-            
-        }else if(puzzle_selected.equals("7f")){
-            puzzle = puzzle_7f;
-            
-        }else if(puzzle_selected.equals("8f")){
-            puzzle = puzzle_8f;
-            
-        }else if(puzzle_selected.equals("9f")){
-            puzzle = puzzle_9f;
-            
-        }
-        
-        main_frame.getContentPane().removeAll();
-        
-        try {
-            Puzzles_Main puzzle_main = new Puzzles_Main();
-        } catch (IOException ex) {
-            Logger.getLogger(Chess_Puzzles_Easy.class.getName()).log(Level.SEVERE, null, ex);
-        } catch (InterruptedException ex) {
-            Logger.getLogger(Chess_Puzzles_Easy.class.getName()).log(Level.SEVERE, null, ex);
-        }
-        
-    }//GEN-LAST:event_Try_Again_ButtonActionPerformed
-
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     public static javax.swing.JLabel Puzzle_Result;
     private javax.swing.JButton Select_New_Puzzle;
-    public static javax.swing.JButton Try_Again_Button;
     // End of variables declaration//GEN-END:variables
 }

@@ -64,7 +64,9 @@ public class Chess_Puzzles_Panel extends JPanel{
         this.add(this.side_Panel_west, BorderLayout.WEST);
         this.add(this.board_2, BorderLayout.CENTER);
         this.setVisible(true);
-        
+        White_turn = true;
+        index_highlight.removeAll(index_highlight);
+        is_new_move = -1;
     }
     
     
@@ -587,12 +589,12 @@ public class Chess_Puzzles_Panel extends JPanel{
                             if(promotion_possible == false){
                                 
                                 //moving piece and seeign if false
-                                if(test_chess.move(turn, x_1, y_1, x_2, y_2, puzzle) == false){
+                                /*if(test_chess.move(turn, x_1, y_1, x_2, y_2, puzzle) == false){
                                    
                                     turn_counter -= 1;
                                     repeat = 1;
                                     
-                                }
+                                }*/
                             }
                             
                             //if promotion is possible repeat move
@@ -663,7 +665,6 @@ public class Chess_Puzzles_Panel extends JPanel{
                                     parent = new Java_main_panel();
                                     cpt_chess.Puzzles_Main.winner_loser_text = "Puzzle Complete";
                                     cpt_chess.Puzzle_End_Panel.Puzzle_Result.setText(cpt_chess.Puzzles_Main.winner_loser_text);
-                                    cpt_chess.Puzzle_End_Panel.Try_Again_Button.setVisible(false);
                                     CardLayout.show(parent ,"puzzle_end");
 
                                     main_frame.add(parent);
@@ -677,7 +678,6 @@ public class Chess_Puzzles_Panel extends JPanel{
                                     parent = new Java_main_panel();
                                     cpt_chess.Puzzles_Main.winner_loser_text = "You have Failed";
                                     cpt_chess.Puzzle_End_Panel.Puzzle_Result.setText(cpt_chess.Puzzles_Main.winner_loser_text);
-                                    cpt_chess.Puzzle_End_Panel.Try_Again_Button.setVisible(true);
                                     CardLayout.show(parent ,"puzzle_end");
 
                                     main_frame.add(parent);

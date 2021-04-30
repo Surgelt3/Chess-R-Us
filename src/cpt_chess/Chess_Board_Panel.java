@@ -78,6 +78,8 @@ public class Chess_Board_Panel extends JPanel{
         this.add(this.side_Panel_west, BorderLayout.WEST);
         this.add(this.board_2, BorderLayout.CENTER);
         this.setVisible(true);
+        index_highlight.removeAll(index_highlight);
+        is_new_move = -1;
         
         //running the second thread for opponenet opening move
         thread();
@@ -160,6 +162,10 @@ public class Chess_Board_Panel extends JPanel{
               //running thread
             }.start();
 
+        }else{
+            White_turn = true;
+            turn_counter = 0;
+            
         }
     }
     
@@ -961,7 +967,7 @@ public class Chess_Board_Panel extends JPanel{
                             if(promotion_possible == false){
                                 
                                 //checking if move is possible
-                                if(test_chess.move(turn, x_1, y_1, x_2, y_2, board ) == false){
+                                if(test_chess.move("w", x_1, y_1, x_2, y_2, board ) == false){
                                     
                                     //if not subtract from turn_counter
                                     turn_counter -= 1;
